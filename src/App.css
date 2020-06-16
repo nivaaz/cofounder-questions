@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .App {
   text-align: center;
-  min-height: 90vh;
+  height: 100vh;
   display: grid;
   grid-gap: 2em;
+  margin: 2em auto;
 }
 .box{
   width: 90vw;
@@ -36,10 +37,12 @@ p.question{
   border: 1px solid black;
   padding: 1em;
   text-align: left;
+  font-family: 'Roboto', sans-serif;
 }
 
 p.operate,
 p.Roles,
+p.Motivation,
 p.Funding,
 p.Finances,
 p.Culture,
@@ -55,31 +58,13 @@ div.Roles,
 div.Funding,
 div.Finances,
 div.Culture,
+div.Motivation,
 div.relationship{
-  margin: auto;
+  margin: 1em auto;
   width: 300px;
   min-height: 25vh;
   padding: 1em;
   display: flex;
-}
-
-div.operate{
-  background-color: #5f27cd;
-}
-div.Roles{
-  background-color: #ff9f43;
-}
-div.Funding{
-  background-color: #ee5253;
-}
-div.Finances{
-  background-color: #0abde3;
-}
-div.Culture{
-  background-color: #10ac84;
-}
-div.relationship{
-  background-color: #e84393;
 }
 
 h2.operate{
@@ -98,7 +83,7 @@ h2.Finances{
   font-family: 'MuseoModerno', cursive;
   color: #0abde3;
 }
-h2.Culture{
+h2.Culture, h2.Motivation{
   font-family: 'MuseoModerno', cursive;
   color: #10ac84;
 }
@@ -110,37 +95,51 @@ h2.relationship{
 button{
   height: 50px;
   background-color: white;
-  font-weight: bold;
   margin: 0.2em;
-  font-family: 'MuseoModerno', cursive;
   cursor: pointer;
+  font-family: 'Roboto', sans-serif;
 }
 
-.selected.operate{
+.selected.operate, div.operate{
   color: white;
   background-color: #5f27cd;
+  background-image: linear-gradient(19deg, #4600ca 0%, #6d32e0 100%);
+  box-shadow: 0px 10px 30px -10px #5f27cd;
 }
-.selected.Roles{
+.selected.Roles, div.Roles{
   color: white;
   background-color: #ff9f43;
+  background-image: linear-gradient(0deg, #ff9f43 10%, #f77a00 100%);
+  
 }
-.selected.Funding{
+.selected.Funding, div.Funding{
   color: white;
-  background-color: #ee5253;
+  background-color: #ed2a2b;
+background-image: linear-gradient(180deg, #ed2a2b 25%, #ee5253 100%);
+box-shadow: 0px 10px 30px -10px #ed2a2b;
+
 }
-.selected.Finances{
+.selected.Finances, div.Finances{
   color: white;
+  box-shadow: 0px 10px 30px -10px #0abde3;
   background-color: #0abde3;
+background-image: linear-gradient(180deg, #0abde3 25%, #00abd0 100%);
 }
-.selected.Culture{
+.selected.Culture, div.Culture, .selected.Motivation, div.Motivation{
   color: white;
+  box-shadow: 0px 10px 30px -10px #10ac84;
   background-color: #10ac84;
+  background-image: linear-gradient(180deg, #10ac84 25%, #009670 100%);  
 }
-.selected.relationship{
+.selected.relationship, div.relationship{
   color: white;
+  box-shadow: 0px 10px 30px -10px #e84393;
   background-color: #e84393;
+  background-image: linear-gradient(180deg, #e84393 25%, #e00069 100%);  
 }
-button.Culture{
+
+/*BUTTONS*/
+button.Culture, button.Motivation{
   color: #10ac84;
   border: 1px solid #10ac84;
 }
@@ -166,6 +165,7 @@ button.operate{
 }
 button.pos.operate,
 button.pos.Roles,
+button.pos.Motivation,
 button.pos.Funding,
 button.pos.Finances,
 button.pos.Culture,
