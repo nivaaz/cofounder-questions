@@ -9,13 +9,15 @@
         ,"How do you cope with stress? Depression? Are there any red flags I can help watch out for? "
         ,"How do you arrive at your convictions? What are some key mental models you use to be creative, solve problems, or make decisions? "
         ,"Describe your work style. What techniques do you use for personal productivity? "
-        ,"How many hours/week are you willing to work? For how long? What sounds good? What sounds like hell? Do you have different expectations for different phases of the company’s lifespan? (i.e. willing to work harder in the beginning)"         
+        ,"How many hours a week are you willing to work? How long is too long?",
+        "How many hours/week are you willing to work? Do you have different expectations for different phases of the company’s lifespan?"         
     ],
     "Roles" : [
         "What would you want your role to be before we reach product/market fit? What would you want your role to be after we reach product/market fit? "
        , "How do you see your role changing as the company starts to scale? (Read the Review article on giving away your Legos.)" 
        , "If your role becomes unavailable entirely (e.g. the board hires a professional CEO or an experienced executive), what would you want your new role to be? "
-       , "Areas of Responsibility (AoR) Exercise. Rank yourself in these areas (both as an individual contributor and as a leader) on a scale of 1-10. Then rate your passion in each of the above areas on a scale of none to high. (e.g. “I’m an 8 in sales, but hate it so none”): SALES MARKETING PRODUCT STRATEGY DESIGN ENGINEERING OPERATIONS FUNDRAISING LEADERSHIP COMPANY BUILDING RECRUITING LEGAL SPECIFIC SKILLS* *Domain or technology-specific skills (e.g. Healthcare, Machine Learning, etc.) A. Cluster AORs based on rank and discuss how they could be assigned to individuals. (E.g. John is a 10 in the product, so he gets that AOR). B. Break ties using the passion rating. (E.g. Nick is a 7 in sales with medium passion and Gloria is a 7 in Sales with high passion, so Gloria will take on sales). Discuss: Do these clusters align with everyone’s expectations, skills, and desires? "
+       , "Rank yourself in these areas from 1-10. SALES, MARKETING, PRODUCT, STRATEGY, DESIGN, ENGINEERING, OPERATIONS, FUNDRAISING, LEADERSHIP, COMPANY BUILDING, RECRUITING, LEGAL, DOMAIN EXPT*"
+       , "Rank your passion in these areas from 1-10. SALES, MARKETING, PRODUCT, STRATEGY, DESIGN, ENGINEERING, OPERATIONS, FUNDRAISING, LEADERSHIP, COMPANY BUILDING, RECRUITING, LEGAL, DOMAIN EXPT*"
        , "Do we all agree on the areas of responsibility for the CEO, CTO, COO, etc?"   
     ],
     "Corporate Structure and Funding":[

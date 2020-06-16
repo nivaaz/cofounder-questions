@@ -6,8 +6,7 @@ import { Landing } from "./components/Landing/Landing";
 function App() {
   const [category, updateCategory] = useState("How you operate");
   const [count, updateCount] = useState(0);
-  const q = [
-    "How you operate",
+  const q = ["How you operate",
     "Roles",
     "Corporate Structure and Funding",
     "Personal Motivation",
@@ -15,12 +14,16 @@ function App() {
     "Team Culture",
     "Co-founding relationship"]
   const randAll = () =>{
-    updateCount(Math.round(Math.random() * questions[category].length));
-    updateCategory(q[Math.round(Math.random() * questions.length)]);
+    const newcat = q[Math.round(Math.random() * 7)];
+    const newcount = Math.round(Math.random() * questions[newcat].length);
+    updateCategory(newcat);
+    updateCount(newcount);
   }
   return (
     <div className="App">
       <Landing />
+
+      <div className="game"> 
       <div >
         <h2 className={category}> Pick a category </h2>
         <div className="buttons">
@@ -142,15 +145,13 @@ function App() {
         <button
           className={category}
           onClick={(e) => {
-            randAll()
-          }}
+            randAll()}}
         >
           {" "}
           random{" "}
         </button>
       </div>
-
-    </div>
+    </div></div>
   );
 }
 
