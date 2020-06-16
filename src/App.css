@@ -195,4 +195,7 @@ p.Culture,
 p.relationship{
   width: 95vw;
 }
+p.question{
+  font-size: large;
+}
 }
