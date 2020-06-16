@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
+
+.App {
+  text-align: center;
+  min-height: 90vh;
+  display: grid;
+  grid-gap: 2em;
+}
+.box{
+  width: 90vw;
+}
+/**/
+
+.buttons{
+  grid-auto-flow: row;
+}
+.nav{
+  width: 300px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+/**
+**/
+h1{
+  font-family: 'MuseoModerno', cursive;
+  margin: auto;
+}
+h2{
+  margin:auto;
+}
+p.question{
+  font-size: xx-large;
+  width: 350px;
+  margin: auto;
+  border: 1px solid black;
+  padding: 1em;
+  text-align: left;
+}
+
+p.operate,
+p.Roles,
+p.Funding,
+p.Finances,
+p.Culture,
+p.relationship{
+  color: white;
+  width: 300px;
+  margin: auto;
+  font-size: xx-large;
+}
+
+div.operate,
+div.Roles,
+div.Funding,
+div.Finances,
+div.Culture,
+div.relationship{
+  margin: auto;
+  width: 300px;
+  min-height: 25vh;
+  padding: 1em;
+  display: flex;
+}
+
+div.operate{
+  background-color: #5f27cd;
+}
+div.Roles{
+  background-color: #ff9f43;
+}
+div.Funding{
+  background-color: #ee5253;
+}
+div.Finances{
+  background-color: #0abde3;
+}
+div.Culture{
+  background-color: #10ac84;
+}
+div.relationship{
+  background-color: #e84393;
+}
+
+h2.operate{
+  font-family: 'MuseoModerno', cursive;
+  color: #5f27cd;
+}
+h2.Roles{
+  font-family: 'MuseoModerno', cursive;
+  color: #ff9f43;
+}
+h2.Funding{
+  font-family: 'MuseoModerno', cursive;
+  color: #ee5253;
+}
+h2.Finances{
+  font-family: 'MuseoModerno', cursive;
+  color: #0abde3;
+}
+h2.Culture{
+  font-family: 'MuseoModerno', cursive;
+  color: #10ac84;
+}
+h2.relationship{
+  font-family: 'MuseoModerno', cursive;
+  color: #e84393;
+}
+/* buttons */
+button{
+  height: 50px;
+  background-color: white;
+  font-weight: bold;
+  margin: 0.2em;
+  font-family: 'MuseoModerno', cursive;
+  cursor: pointer;
+}
+
+.selected.operate{
+  color: white;
+  background-color: #5f27cd;
+}
+.selected.Roles{
+  color: white;
+  background-color: #ff9f43;
+}
+.selected.Funding{
+  color: white;
+  background-color: #ee5253;
+}
+.selected.Finances{
+  color: white;
+  background-color: #0abde3;
+}
+.selected.Culture{
+  color: white;
+  background-color: #10ac84;
+}
+.selected.relationship{
+  color: white;
+  background-color: #e84393;
+}
+button.Culture{
+  color: #10ac84;
+  border: 1px solid #10ac84;
+}
+button.relationship{
+  color: #e84393;
+  border: 1px solid #e84393;
+}
+button.Finances{
+  color: #0abde3;
+  border: 1px solid #0abde3;
+}
+button.Funding{
+  color: #ee5253;
+  border: 1px solid #ee5253;
+}
+button.Roles{
+  color: #ff9f43;
+  border: 1px solid #ff9f43;
+}
+button.operate{
+  color: #5f27cd;
+  border: 1px solid #5f27cd;
+}
+button.pos.operate,
+button.pos.Roles,
+button.pos.Funding,
+button.pos.Finances,
+button.pos.Culture,
+button.pos.relationship{
+  font-size: xx-large;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  padding: none;
+}
