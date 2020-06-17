@@ -87,7 +87,7 @@ h2.Funding{
 }
 h2.Finances{
   font-family: 'MuseoModerno', cursive;
-  color: #0abde3;
+  color: #4b7bec;
 }
 h2.Culture, h2.Motivation{
   font-family: 'MuseoModerno', cursive;
@@ -127,9 +127,9 @@ box-shadow: 0px 10px 30px -10px #ed2a2b;
 }
 .selected.Finances, div.Finances{
   color: white;
-  box-shadow: 0px 10px 30px -10px #0abde3;
-  background-color: #0abde3;
-background-image: linear-gradient(180deg, #0abde3 25%, #00abd0 100%);
+  box-shadow: 0px 10px 30px -10px #4b7bec;
+  background-color: #4b7bec;
+background-image: linear-gradient(180deg, #4b7bec 25%, #004cff 100%);
 }
 .selected.Culture, div.Culture, .selected.Motivation, div.Motivation{
   color: white;
@@ -154,8 +154,8 @@ button.relationship{
   border: 1px solid #e84393;
 }
 button.Finances{
-  color: #0abde3;
-  border: 1px solid #0abde3;
+  color: #4b7bec;
+  border: 1px solid #4b7bec;
 }
 button.Funding{
   color: #ee5253;
@@ -186,16 +186,16 @@ button.pos.relationship{
 
 
 @media screen and (max-width: 400px){
-p.operate,
-p.Roles,
-p.Motivation,
-p.Funding,
-p.Finances,
-p.Culture,
-p.relationship{
-  width: 95vw;
-}
-p.question{
-  font-size: large;
-}
+  p.operate,
+  p.Roles,
+  p.Motivation,
+  p.Funding,
+  p.Finances,
+  p.Culture,
+  p.relationship{
+    width: 95vw;
+  }
+  p.question{
+    font-size: large;
+  }
 }
