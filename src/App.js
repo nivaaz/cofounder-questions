@@ -13,6 +13,10 @@ function App() {
     "Commitment & Finances",
     "Team Culture",
     "Co-founding relationship"]
+  const updateAll = (cat, cnt )=>{
+    updateCategory(cat);
+    updateCount((cnt>questions[cat].length) ? questions[cat].length-1: cnt);
+  }
   const randAll = () =>{
     const newcat = q[Math.round(Math.random() * 7)];
     const newcount = Math.round(Math.random() * questions[newcat].length);
@@ -33,7 +37,7 @@ function App() {
             }
             value="How you operate"
             onClick={(e) => {
-              updateCategory(e.target.value);
+              updateAll(e.target.value, count)
             }}
           >
             How you operate?
@@ -41,7 +45,7 @@ function App() {
           <button
             className={category === "Roles" ? "selected Roles" : "Roles"}
             onClick={(e) => {
-              updateCategory(e.target.value);
+              updateAll(e.target.value, count)
             }}
             value="Roles"
           >
@@ -50,7 +54,7 @@ function App() {
           <button
             className={category === "Personal Motivation" ? "selected Culture" : "Culture"}
             onClick={(e) => {
-              updateCategory(e.target.value);
+              updateAll(e.target.value, count)
             }}
             value="Personal Motivation"
           >
@@ -63,7 +67,7 @@ function App() {
                 : "Funding"
             }
             onClick={(e) => {
-              updateCategory(e.target.value);
+              updateAll(e.target.value, count)
             }}
             value="Corporate Structure and Funding"
           >
@@ -76,7 +80,7 @@ function App() {
                 : "Finances"
             }
             onClick={(e) => {
-              updateCategory(e.target.value);
+              updateAll(e.target.value, count)
             }}
             value="Commitment & Finances"
           >
@@ -87,7 +91,7 @@ function App() {
               category === "Team Culture" ? "selected Culture" : "Culture"
             }
             onClick={(e) => {
-              updateCategory(e.target.value);
+              updateAll(e.target.value, count)
             }}
             value="Team Culture"
           >
@@ -100,7 +104,7 @@ function App() {
                 : "relationship"
             }
             onClick={(e) => {
-              updateCategory(e.target.value);
+              updateAll(e.target.value, count)
             }}
             value="Co-founding relationship"
           >
@@ -143,12 +147,12 @@ function App() {
         </div>
 
         <button
-          className={category}
+          className={category + " rando"}
           onClick={(e) => {
             randAll()}}
         >
           {" "}
-          random{" "}
+          Random Question{" "}
         </button>
       </div>
     </div></div>
